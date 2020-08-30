@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+body {
+  background-color: white;
+}
+    </style>
+</head>
+<body>
+    <form>
+        <ul>
+            <li>
+                <label for="primeironome">Primeiro nome:</label>
+                <input type="text" id="primeironome" name="primeironome" maxlength="12">*
+            </li>
+            <li>
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome" maxlength="20">*
+            </li>    
+            <li>    
+                <label for="apelido">Apelido:</label>
+                <input type="text" id="apelido" name="apelido" maxlength="10">
+            </li>
+            <fieldset>
+                <legend>Gênero:</legend>
+                <ul>
+                <li>
+                    <label for="feminino">Feminino:</label>
+                    <input type="radio" name="genero" id="feminino">
+                </li>
+                <li>
+                    <label for="masculino">Masculino:</label>
+                    <input type="radio" name="genero" id="masculino">
+                </li>
+                </ul>
+            </fieldset>
+            <li>
+                <label for="whatsapp">Whatsapp:</label>
+                <input type="text" name="whatsapp" id="whatsapp">
+            </li>
+            <li>    
+                <label for="telefone">Telefone fixo:</label>
+                <input type="tel" name="telefone" id="telefone">
+            </li>
+            <li>    
+                <label for="endereco">Endereço:</label>
+                <textarea name="endereco" id="endereco" cols="30" rows="15"></textarea>
+            </li>    
+            <li>    
+                <label for="bairro">Bairro:</label>
+                <textarea name="bairro" id="bairro" cols="30" rows="15"></textarea>
+            </li>
+            <li>
+                <label for="profissão">Profissão:</label>
+                <input type="text" name="profissao" id="profissão" maxlength="20">
+            </li>
+            <li>
+                <label for="nascimento">Nascimento:</label>
+                <input type="date" name="nascimento" id="nascimento">
+            </li> 
+        </ul>
+    </form>
+</body>
+</html>
