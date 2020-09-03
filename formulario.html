@@ -4,14 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-    <style>
-body {
-  background-color: white;
-}
-    </style>
 </head>
 <body>
-    <form>
+    <form action="handler.php" method="POST">
         <ul>
             <li>
                 <label for="primeironome">Primeiro nome:</label>
@@ -28,14 +23,14 @@ body {
             <fieldset>
                 <legend>Gênero:</legend>
                 <ul>
-                <li>
-                    <label for="feminino">Feminino:</label>
-                    <input type="radio" name="genero" id="feminino">
-                </li>
-                <li>
-                    <label for="masculino">Masculino:</label>
-                    <input type="radio" name="genero" id="masculino">
-                </li>
+                    <li>
+                        <label for="feminino">Feminino:</label>
+                        <input type="radio" name="genero" id="feminino">
+                    </li>
+                    <li>
+                        <label for="masculino">Masculino:</label>
+                        <input type="radio" name="genero" id="masculino">
+                    </li>
                 </ul>
             </fieldset>
             <li>
@@ -48,11 +43,11 @@ body {
             </li>
             <li>    
                 <label for="endereco">Endereço:</label>
-                <textarea name="endereco" id="endereco" cols="30" rows="15"></textarea>
+                <textarea name="endereco" id="endereco" maxlength="255"></textarea>
             </li>    
             <li>    
                 <label for="bairro">Bairro:</label>
-                <textarea name="bairro" id="bairro" cols="30" rows="15"></textarea>
+                <textarea name="bairro" id="bairro" maxlength="255"></textarea>
             </li>
             <li>
                 <label for="profissão">Profissão:</label>
@@ -61,7 +56,43 @@ body {
             <li>
                 <label for="nascimento">Nascimento:</label>
                 <input type="date" name="nascimento" id="nascimento">
-            </li> 
+            </li>
+            <li>
+                <label for="datacadastro">Data de cadastro:</label>
+                <input type="date" name="datacadastro" id="datacadastro">
+            </li>
+            <li>
+                <label for="historico">Histórico (link):</label>
+                <input type="text" name="historico" id="historico" maxlength="255">
+            </li>
+            <fieldset>
+                <legend>Voto:</legend>
+                <ul>
+                <li>
+                    <label for="sim">Sim:</label>
+                    <input type="radio" name="voto" id="sim">
+                </li>
+                <li>
+                    <label for="não">Não:</label>
+                    <input type="radio" name="voto" id="não">
+                </li>
+                <li>
+                    <label for="indefinido">Indefinido:</label>
+                    <input type="radio" name="voto" id="indefinido">
+                </li>
+                </ul>
+            </fieldset>
+            <li>
+                <label for="votolocal">Local de voto:</label>
+                <textarea name="votolocal" id="votolocal" maxlength="255"></textarea>
+            </li>
+            <li>
+                <label for="facebook">Facebook:</label>
+                <textarea name="facebook" id="facebook" maxlength="255"></textarea>
+            </li>
+            <div class="button">
+                <input type="submit" value="Enviar">
+            </div>
         </ul>
     </form>
 </body>
